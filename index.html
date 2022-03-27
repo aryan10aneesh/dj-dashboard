@@ -17,12 +17,21 @@
         
     <div class="position-absolute top-50 start-50 translate-middle text-center">
         <h1>DJ Dashboard</h1>
-        <form action="find-song" method="get">
-            <div class="input-group mb-3" style="width: 400px;">
+        <form action="find-song" method="get" class="align-items-center">
+            <div class="input-group mb-3 align-items-center" style="width: 400px;">
                 <button class="btn btn-light border" type="submit" id="search-button">Search</button>
-                <input type="text" id="query" placeholder="Name of song" class="form-control" placeholder="" aria-label="search-text" aria-describedby="search-button">
+                <input type="text" id="query" placeholder="Name of song" class="form-control" aria-label="search-text" aria-describedby="search-button">
             </div>
         </form>
+    </div>
+    <div class="row row-cols-lg-auto g-3 align-items-center position-absolute start-50 translate-middle text-center" style="top: 58%;">
+        <div col-12>  
+            <input type="text" id="query" placeholder="Start" class="form-control" aria-label="start-time" style="width: 150px;">
+        </div>
+        -
+        <div col-12>  
+            <input type="text" id="query" placeholder="End" class="form-control" aria-label="end-time" style="width: 150px;">
+        </div>
     </div>
 </body>
 
